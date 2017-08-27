@@ -26,7 +26,7 @@ def init():
 
 def display():
     i = 0
-    glTranslate(-10.,5.,-25.)
+    glTranslate(-10.,5.,-25.) #Centering the entire sett of objects
     for glnotation in methods:
         newObject(glnotation)
         if i==4:
@@ -46,5 +46,4 @@ def newObject(openglnotation):
         glVertex3fv(vertices[i], vertices[i+1])
 
     glEnd()
-
 init()
