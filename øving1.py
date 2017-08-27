@@ -21,10 +21,8 @@ def init():
     gluLookAt(0,0,1,
               0,0,0,
               0,1,0)
-
     glPushMatrix()
     glutMainLoop()
-
 
 def display():
     i = 0
