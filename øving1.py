@@ -41,8 +41,10 @@ def display():
 
 def newObject(openglnotation):
     glBegin(openglnotation)
-    for i in range(len(vertices)-1):
-        glVertex3fv(vertices[i], vertices[i+1])
-
+    for i in range(len(vertices)):
+        if i != len(vertices)-1:
+            glVertex3fv(vertices[i], vertices[i+1])
+        else:
+            glVertex3fv(vertices[i], vertices[0])
     glEnd()
 init()
