@@ -13,7 +13,6 @@ def init():
     glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH)
     glutInitWindowSize(800,600)
     glutCreateWindow("test")
-
     glutDisplayFunc(display)
     glMatrixMode(GL_PROJECTION)
     gluPerspective(45.0,4.0/3.0,0.1,100)
