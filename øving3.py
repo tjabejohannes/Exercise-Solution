@@ -42,4 +42,5 @@ def newObject(openglnotation):
         else:
             glVertex3fv(vertices[i], vertices[0])
     glEnd()
+
 init()
